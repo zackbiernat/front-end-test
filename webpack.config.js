@@ -1,36 +1,32 @@
-var webpack = require('webpack'),
-    port = 8080,
-    config = {
-        entry: [
-            'webpack-dev-server/client?http://localhost:' + port,
-            'webpack/hot/only-dev-server',
-            './index.js'
-        ],
-        output: {
-            path: __dirname + '/dist',
-            filename: 'app.js'
-        },
-        module: {
-            loaders: [
-                {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}
-            ]
-        },
-        resolve: {
-            extensions: ['', '.js']
-        },
-        devtool: 'source-map',
-        plugins: [
-            new webpack.HotModuleReplacementPlugin()
-        ],
-        devServer: {
-            port: port,
-            info: false,
-            historyApiFallback: true,
-            hot: true,
-            contentBase: '.',
-            host: '0.0.0.0'
-        },
-        bail: true
-    };
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
+const appTitle = 'Pizza Challenge';
+const filePath = path.join(__dirname, 'src','index.js');
+const PORT = '8080';
+
+const config = {
+  entry: filePath,
+  output: {
+    filename: 'bundle.js',
+    path: path.join(__dirname, 'dist', )
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: appTitle,
+      template: path.join(__dirname, 'src', 'index.html')
+    })
+  ],
+  module: {
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+    ]
+  },
+  devServer: {
+    compress: true,
+    open: true,
+    port: PORT
+  }
+}
 
 module.exports = config;
