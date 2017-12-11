@@ -20,7 +20,7 @@ You will only need to worry about supporting the latest version of Chrome for yo
 
 ### Usage of frameworks and libraries
 
-This exam is intentionally designed to be implemented without the usage of any javascript frameworks or additional libraries other than the ones included in the package.json. You are to complete this exam without adding any additional dependencies.
+Though [React](https://reactjs.org/) is included in this assessment, this can absolutely be done with without the usage of any javascript frameworks or additional libraries other than the ones included in the `package.json`.
 
 ## Requirements
 
