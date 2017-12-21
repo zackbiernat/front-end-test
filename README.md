@@ -12,7 +12,7 @@ Once you are finished with the exam, please delete the node_modules directory, z
 
 ## Expectations
 
-We expect that you will complete this test in an honest fashion. You should not copy and paste code from stack overflow or blogs in order to complete it and you should implement it without the aid of anyone else. Successful completion will include an implementation for each of the following requirements. Extra credit will be given for tests (which use mocha and enzyme), refactoring, styles, and efficient usage of relevant algorithms.
+We expect that you will complete this test in an honest fashion. You should not copy and paste code from stack overflow or blogs in order to complete it and you should implement it without the aid of anyone else. Successful completion will include an implementation for each of the following requirements. Extra credit will be given for tests (which use mocha and enzyme), refactoring, efficient usage of relevant algorithms, and styles. Weighted in that order.
 
 Babel 6 is already included along with the complimentary build configuration. You should not need to make any changes to this.
 
