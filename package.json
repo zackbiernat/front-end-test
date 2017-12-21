@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A test for prospective front-end developers",
   "main": "index.js",
+  "engines": {
+    "node": "<=6"
+  },
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
