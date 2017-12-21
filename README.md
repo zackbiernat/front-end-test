@@ -20,7 +20,7 @@ You will only need to worry about supporting the latest version of Chrome for yo
 
 ### Usage of frameworks and libraries
 
-Though [React](https://reactjs.org/) is included in this assessment, this can absolutely be done with without the usage of any javascript frameworks or additional libraries other than the ones included in the `package.json`.
+Though [React](https://reactjs.org/) is included in this assessment, this can absolutely be done with or without the usage of any javascript frameworks or additional libraries other than the ones included in the `package.json`.
 
 ## Requirements
 
