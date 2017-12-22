@@ -1,6 +1,6 @@
-## Introduction
+# Challenge Overview
 
-In order to successfully complete this exam, you will need to have node v4 or greater installed on your machine.
+In order to successfully complete this exam, you will need to have node v6 or greater installed on your machine.
 
 * Install project dependencies: `npm i`
 * To start the application: `npm start`
@@ -12,15 +12,17 @@ Once you are finished with the exam, please delete the node_modules directory, z
 
 ## Expectations
 
-We expect that you will complete this test in an honest fashion. You should not copy and paste code from stack overflow or blogs in order to complete it and you should implement it without the aid of anyone else. Successful completion will include an implementation for each of the following requirements. Extra credit will be given for tests (which use mocha and enzyme), refactoring, styles, and efficient usage of relevant algorithms.
+We expect that you will complete this test in an honest fashion. You should not copy and paste code from stack overflow or blogs in order to complete it and you should implement it without the aid of anyone else. Successful completion will include an implementation for each of the following requirements. Extra credit will be given for tests (which use [mocha](https://mochajs.org/), [code](https://www.npmjs.com/package/code), and [enzyme](http://airbnb.io/enzyme/)), refactoring, efficient usage of relevant algorithms, and styles, weighted in that order.
 
-Babel 6 is already included along with the complimentary build configuration. You should not need to make any changes to this.
+### About the file setup
+
+Babel 6 is already included along with the complimentary build configuration. You should not need to make any changes to this. Also, regarding testing, [jsdom](https://www.npmjs.com/package/jsdom) and the appropriate [enzyme adapter](http://airbnb.io/enzyme/docs/guides/migration-from-2-to-3.html) are already setup to automatically run before your tests and should not need to be interacted with directly.
 
 You will only need to worry about supporting the latest version of Chrome for your solution.
 
 ### Usage of frameworks and libraries
 
-This exam is intentionally designed to be implemented without the usage of any javascript frameworks or additional libraries other than the ones included in the package.json. You are to complete this exam without adding any additional dependencies.
+Though [React](https://reactjs.org/) is included in this assessment, this can absolutely be done with or without the usage of any javascript frameworks or additional libraries other than the ones included in the `package.json`.
 
 ## Requirements
 
