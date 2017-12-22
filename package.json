@@ -4,7 +4,7 @@
   "description": "A test for prospective front-end developers",
   "main": "index.js",
   "engines": {
-    "node": "<=6"
+    "node": ">=6"
   },
   "scripts": {
     "start": "webpack-dev-server",
