@@ -46,4 +46,16 @@ describe('Pizza View tests', () => {
     wrapper.instance().handleQueryChange(event);
     expect(wrapper.instance().state.list).to.have.length(2);
   });
+  it('should be able to query without and then sort', () => {
+    const wrapper = mount(<PizzaView pizzaList={pizzas}/>);
+    let event = {
+      target: {
+        value: 'oNE'
+      },
+      preventDefault: () => {}
+    }
+    wrapper.instance().handleQueryChange(event);
+    wrapper.instance().handleSortClick();
+    expect(wrapper.instance().state.list[0]).to.be.equal('one more')
+  });
 });
