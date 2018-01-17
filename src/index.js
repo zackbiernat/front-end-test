@@ -1,4 +1,21 @@
-import fetch from 'isomorphic-fetch';
+import React from 'react';
+import ReactDOM from 'react-dom';
+require('isomorphic-fetch');
+//require('es6-promise').polyfill();
+import PizzaView from './components/PizzaView';
+
+const pizzaGetter = () => {
+  return fetch('/pizza.json').then((response) => response.json());
+}
+pizzaGetter().then(result => {
+  ReactDOM.render(
+    <PizzaView pizzaList={result['pizzas']}/>
+    ,
+    document.getElementsByClassName('content')[0]
+  );
+})
+
+
 
 // Note: this is the entry point for the entire application
 
